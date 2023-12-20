@@ -1,9 +1,11 @@
-#root, html, body {
+#root,
+html,
+body {
   height: 100%;
 }
 
 :root {
-  --bg-color: #0b0b0e;
+  --bg-color: #b67e18;
   --text-color: #ffffff;
   --recent-plays-bg: #13151c;
   --recent-plays-bg-hover: #1a1c24;
@@ -16,7 +18,8 @@
   --recent-plays-bg-hover: #dbdff8;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -42,24 +45,32 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: .4em;
+  width: 0.4em;
 }
 
 body::-webkit-scrollbar-thumb {
   bg-color: #cccccc33;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   font-weight: 700;
 }
 
-body, input, button, textarea, pre {
-  font-family: 'Roboto Mono', monospace;
+body,
+input,
+button,
+textarea,
+pre {
+  font-family: "Roboto Mono", monospace;
   font-size: 14px;
 }
 
-a:not([href^="https://"]):not([href^="http://"]) {
+a:not([href^="https://"]):not([href^="http://"])
+{
   text-decoration: none;
 }
 
@@ -112,8 +123,8 @@ a {
   color: white;
   border-radius: 5px;
   padding: 10px;
-  opacity: .9;
-  transition: opacity .2s;
+  opacity: 0.9;
+  transition: opacity 0.2s;
   cursor: pointer;
 }
 
@@ -146,7 +157,7 @@ a {
 
 .gamba-game-button:disabled {
   cursor: default;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .gamba-ui-select-container {
@@ -158,11 +169,11 @@ a {
 }
 
 .gamba-game-button.selected {
-  background: #515182!important;
+  background: #515182 !important;
 }
 
 .gamba-game-button:active {
-  transition: opacity .2s, transform .1s ease;
+  transition: opacity 0.2s, transform 0.1s ease;
   opacity: 1;
 }
 
