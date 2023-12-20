@@ -20,7 +20,7 @@
 }
 
 .color-default {
-  --bg-col-solid: #1e222f;
+  --bg-col-solid: #d58b10;
   --bg-col-solid-hover: #212738;
   --bg-col-outlined: #21273866;
   --bg-col-outlined-hover: #6666ff66;
@@ -29,10 +29,10 @@
 }
 
 .color-white {
-  --bg-col-solid: #FFFFFFDF;
-  --bg-col-solid-hover: #FFFFFF;
-  --bg-col-outlined: #FFFFFF33;
-  --bg-col-outlined-hover: #FFFFFF99;
+  --bg-col-solid: #ffffffdf;
+  --bg-col-solid-hover: #ffffff;
+  --bg-col-outlined: #ffffff33;
+  --bg-col-outlined-hover: #ffffff99;
   --col-outlined: white;
   --col-solid: black;
 }
@@ -72,7 +72,7 @@
 .button {
   margin: 0;
   border-radius: 8px;
-  transition: background .25s;
+  transition: background 0.25s;
   text-align: center;
   display: inline-block;
   text-wrap: nowrap;
@@ -89,8 +89,8 @@
 }
 
 .button:disabled {
-  opacity: .9;
-  cursor: default
+  opacity: 0.9;
+  cursor: default;
 }
 
 a.button {
@@ -98,7 +98,7 @@ a.button {
 }
 
 .icon {
-  margin-left: .5em;
+  margin-left: 0.5em;
   position: relative;
   display: inline-block;
   width: 20px;
@@ -112,12 +112,16 @@ a.button {
 }
 
 @keyframes loader-spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .loader {
-  --border-size: .2em;
+  --border-size: 0.2em;
   --size: 1em;
   display: inline-block;
   border: var(--border-size) solid transparent;
@@ -125,5 +129,5 @@ a.button {
   border-radius: 50%;
   width: var(--size);
   height: var(--size);
-  animation: loader-spin .3s linear infinite;
+  animation: loader-spin 0.3s linear infinite;
 }
